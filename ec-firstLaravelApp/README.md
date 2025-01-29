@@ -66,7 +66,19 @@ npm install
     cp .env.example .env
     ```
 
-2. Update the `.env` file with your **XAMPP MySQL** database credentials. Replace `your_database_name` with the name of the database you created in **phpMyAdmin**. If your MySQL user has no password, leave `DB_PASSWORD` empty.
+2. Run the following command to generate an `APP_KEY`:
+
+    ```
+    php artisan key:generate
+    ```
+
+3. Clear the config cache to ensure the new key is properly loaded:
+
+    ```
+    php artisan config:clear
+    ```
+
+4. Update the `.env` file with your **XAMPP MySQL** database credentials. Replace `your_database_name` with the name of the database you created in **phpMyAdmin**. If your MySQL user has no password, leave `DB_PASSWORD` empty.
 
     ```
     DB_CONNECTION=mysql
