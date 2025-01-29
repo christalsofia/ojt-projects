@@ -62,20 +62,20 @@ npm install
 ### **5. Set Up Environment**
 1. Duplicate the example environment file:
 
-```
-cp .env.example .env
-```
+    ```
+    cp .env.example .env
+    ```
 
 2. Update the `.env` file with your **XAMPP MySQL** database credentials. Replace `your_database_name` with the name of the database you created in **phpMyAdmin**. If your MySQL user has no password, leave `DB_PASSWORD` empty.
 
-```
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database_name
-DB_USERNAME=root
-DB_PASSWORD=
-```
+    ```
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=your_database_name
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
 
 ### **6. Run Migrations**
 Run this command to create database tables:
@@ -89,15 +89,15 @@ php artisan migrate
 1. Ensure **Apache** and **MySQL** are running via XAMPP Control Panel.
 2. Start Laravel's development server:
 
-```
-php artisan serve
-```
+    ```
+    php artisan serve
+    ```
 
 3. Start Vite for live asset building and hot reloading:
 
-```
-npm run dev
-```
+    ```
+    npm run dev
+    ```
 
 ### **8. Access the Application**
 Open your browser and visit the application:
