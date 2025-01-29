@@ -37,7 +37,7 @@ You can clone the full repository or use **sparse checkout** to get only this pr
 
 ```
 git clone https://github.com/christalsofia/ojt-projects.git
-cd ojt-projects/ec-firstlaravel
+cd ojt-projects/ec-firstLaravelApp
 ```
 
 #### **Sparse Checkout (Only This Folder)**
@@ -46,9 +46,9 @@ cd ojt-projects/ec-firstlaravel
 git clone --no-checkout https://github.com/christalsofia/ojt-projects.git
 cd ojt-projects
 git sparse-checkout init --cone
-git sparse-checkout set ec-firstlaravel
+git sparse-checkout set ec-firstLaravelApp
 git checkout
-cd ec-firstlaravel
+cd ec-firstLaravelApp
 ```
 
 ### **4. Install Dependencies**
