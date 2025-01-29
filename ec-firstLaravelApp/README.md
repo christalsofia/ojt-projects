@@ -1,4 +1,4 @@
-# **First Laravel Project**
+# **First Laravel App**
 
 ## **Overview**
 This is a simple Laravel project created using the Laravel Installer, Breeze for authentication scaffolding, and Blade for the view engine. This project demonstrates basic features such as user authentication and registration.
