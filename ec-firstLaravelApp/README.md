@@ -1,46 +1,36 @@
-# **First Laravel App**
+# First Laravel App
 
-## **Overview**
+## Overview
 This is a simple Laravel project created using the Laravel Installer, Breeze for authentication scaffolding, and Blade for the view engine. This project demonstrates basic features such as user authentication and registration.
 
-## **Features**
-- User authentication (login, register)
-- Blade templating engine for views
-- Breeze UI for authentication
-- Responsive design
+## Prerequisite(s)
 
-## **Technologies Used**
-- **Backend:** Laravel
-- **Frontend:** Blade, TailwindCSS, AlpineJS (via Breeze)
-- **Database:** MySQL (via XAMPP)
-- **Development Tools:** Composer, npm, Vite (for front-end asset management)
+- [Composer](https://getcomposer.org/download/)
+- [PHP](https://www.php.net/downloads.php)
+- [node.js](https://nodejs.org/en/download)
+- [XAMPP](https://www.apachefriends.org/download.html)
 
-## **Local Setup**
+## Local Setup
 
-### **1. Install XAMPP**
-Before setting up the Laravel project, make sure you have **XAMPP** installed to run Apache and MySQL:
-1. Download XAMPP from [Apache Friends](https://www.apachefriends.org/index.html).
-2. Install XAMPP and run **Apache** and **MySQL** from the XAMPP Control Panel.
+### 1. Create Database in phpMyAdmin
+1. Run Apache and MySQL via XAMPP Control Panel.
+2. Open your browser and go to [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
+3. Log in using the default MySQL username (`root`) and leave the password field empty (if no password is set).
+4. Click on **Databases** in the top menu.
+5. Create a new database (e.g., `your_database_name`).
+6. Once created, note the database name for later use in the `.env` file.
 
+### 2. Clone the Repository
+You can clone the full repository or use sparse checkout to get only this project:
 
-### **2. Create Database in phpMyAdmin**
-1. Open your browser and go to [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
-2. Log in using the default MySQL username (`root`) and leave the password field empty (if no password is set).
-3. Click on **Databases** in the top menu.
-4. Create a new database (e.g., `your_database_name`).
-5. Once created, note the database name for later use in the `.env` file.
-
-### **3. Clone the Repository**
-You can clone the full repository or use **sparse checkout** to get only this project:
-
-#### **Full Clone**
+#### Full Clone
 
 ```
 git clone https://github.com/christalsofia/ojt-projects.git
 cd ojt-projects/ec-firstLaravelApp
 ```
 
-#### **Sparse Checkout (Only This Folder)**
+#### Sparse Checkout (Only This Folder)
 
 ```
 git clone --no-checkout https://github.com/christalsofia/ojt-projects.git
@@ -51,7 +41,7 @@ git checkout
 cd ec-firstLaravelApp
 ```
 
-### **4. Install Dependencies**
+### 3. Install Dependencies
 Run the following commands to install PHP and JavaScript dependencies:
 
 ```
@@ -59,7 +49,7 @@ composer install
 npm install
 ```
 
-### **5. Set Up Environment**
+### 4. Set Up Environment
 1. Duplicate the example environment file:
 
     ```
@@ -78,7 +68,7 @@ npm install
     php artisan config:clear
     ```
 
-4. Update the `.env` file with your **XAMPP MySQL** database credentials. Replace `your_database_name` with the name of the database you created in **phpMyAdmin**. If your MySQL user has no password, leave `DB_PASSWORD` empty.
+4. Update the `.env` file with your XAMPP MySQL database credentials. Replace `your_database_name` with the name of the database you created in phpMyAdmin. If your MySQL user has no password, leave `DB_PASSWORD` empty.
 
     ```
     DB_CONNECTION=mysql
@@ -89,7 +79,7 @@ npm install
     DB_PASSWORD=
     ```
 
-### **6. Run Migrations**
+### 5. Run Migrations
 Run this command to create database tables:
 
 ```
@@ -97,8 +87,8 @@ php artisan migrate
 ```
 
 
-### **7. Start Local Servers**
-1. Ensure **Apache** and **MySQL** are running via XAMPP Control Panel.
+### 6. Start Local Servers
+1. Ensure Apache and MySQL are running via XAMPP Control Panel.
 2. Start Laravel's development server:
 
     ```
@@ -111,12 +101,9 @@ php artisan migrate
     npm run dev
     ```
 
-### **8. Access the Application**
+### 7. Access the Application
 Open your browser and visit the application:
 
 ```
 http://localhost:8000
 ```
-
-## **Notes**
-- You can modify `.env` to change the database connection settings.
