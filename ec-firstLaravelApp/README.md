@@ -7,7 +7,7 @@ This is a simple Laravel project created using the Laravel Installer, Breeze for
 
 - [Composer](https://getcomposer.org/download/)
 - [PHP](https://www.php.net/downloads.php)
-- [node.js](https://nodejs.org/en/download)
+- [Node.js](https://nodejs.org/en/download)
 - [XAMPP](https://www.apachefriends.org/download.html)
 
 ## Local Setup
