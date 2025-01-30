@@ -16,7 +16,7 @@ This is a simple Laravel project created using the Laravel Installer, Breeze for
 1. Run Apache and MySQL via XAMPP Control Panel.
 2. Open your browser and go to [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
 3. Log in using the default MySQL username (`root`) and leave the password field empty (if no password is set).
-4. Click on **Databases** in the top menu.
+4. Click on Databases in the top menu.
 5. Create a new database (e.g., `your_database_name`).
 6. Once created, note the database name for later use in the `.env` file.
 
